@@ -1,0 +1,32 @@
+# The contents of this file are parsed and made available as
+# via `site.*`. So for example, {{ site.title }} can be used
+# in a template to get the contents of the `title` key.
+author: brusselsPHP
+email: brusselsphp@gmail.com
+
+title: Brussels PHP
+subtitle: Your amazing php user group
+twitter_handle: https://twitter.com/brusselsphp
+
+meetup_url: http://www.meetup.com/Brussels-PHP-Meetup/
+
+url: http://localhost:8000
+color:
+    main: '#7baba2'
+    link: '#095863'
+
+lastpost: 2015-03-18
+
+sponsors:
+    -
+      name: Cube Solutions
+      url: https://cu.be
+      logo: cube/cube.png
+    -
+      name: Beta Cowork
+      url:
+      logo: betacowork/betacowork-banner-logo.svg
+
+# Insert your disqus shortname
+#disqus:
+#    shortname:

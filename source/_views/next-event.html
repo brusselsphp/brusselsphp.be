@@ -1,0 +1,48 @@
+<div id="section-info">
+    <div class="container">
+        <div class="next-meetup one columns">
+            {% if page.next_post %}
+            <a class="next" href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true" title="{{ page.next_post.title }}"></span>
+            </a>
+            {% endif %}
+        </div>
+        <div class="four columns">
+            <h2>
+                {% if homepage %}Next {% endif %}
+                meetup
+            </h2>
+            <p>{{ page.title }}</p>
+        </div><!-- // .four -->
+
+        <div class="three columns">
+            <div id="box-date">
+                <h3>Date</h3>
+                <p>{{ page.date | date('d M Y') }}</p>
+            </div><!-- // #box-date -->
+        </div><!-- // .four -->
+
+        <div class="three columns">
+            <div id="box-time">
+                <h3>Hour</h3>
+                <p>{{ page.hour }}</p>
+            </div><!-- // #box-time -->
+        </div><!-- // .four -->
+
+        <div class="four columns">
+            <div id="box-location">
+                <h3>Location</h3>
+                <p><a href="{{ page.location.url }}" target="new">{{ page.location.name }}</a></p>
+            </div><!-- // #box-location -->
+        </div><!-- // .four -->
+
+        <div class="previous-meetup one columns">
+            {% if page.previous_post %}
+            <a class="previous" href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" title="{{ page.previous_post.title }}"></span>
+            </a>
+            {% endif %}
+        </div>
+        <div class="clear"></div>
+    </div><!-- // .container -->
+</div><!-- // #section-info -->

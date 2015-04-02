@@ -1,0 +1,16 @@
+{% for photo in page.photos %}
+<div id="section-photos">
+    <div class="container">
+        <div class="sixteen columns">
+            <h2>Photos</h2>
+            <div class="mosaic">
+                <a>
+                    <img src="{{ photo }}" alt="">
+                </a>
+            </div>
+        </div><!-- // .sixteen -->
+    </div>
+
+    <div style="clear:both"></div>
+</div>
+{% endfor %}

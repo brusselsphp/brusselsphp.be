@@ -1,0 +1,14 @@
+---
+layout: default
+title: Home
+generator: pagination
+pagination:
+    max_per_page: 1
+use:
+    - posts
+---
+{% block content %}
+    {% for meetup in page.pagination.items %}
+        {% include 'meetup.html' with { 'page': meetup.meta, 'homepage': true } %}
+    {% endfor %}
+{% endblock %}

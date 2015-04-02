@@ -1,0 +1,17 @@
+sculpin_content_types:
+#    posts:
+#        permalink: blog/:year/:month/:day/:filename/
+#        enabled: false
+    posts:
+        permalink: meetup/:year/:month/:day/:filename/
+        path: ["_meetups"]
+        publish_drafts: null
+        layout: meetups
+
+sculpin_twig:
+    view_paths:
+        ['_views', '_meetups', 'css' ]
+    extensions:
+        ['', 'twig', 'html', 'html.twig', 'twig.html', 'css']
+sculpin:
+    ignore: ["**/*~"]

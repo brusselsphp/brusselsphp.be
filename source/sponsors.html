@@ -1,0 +1,40 @@
+---
+layout: default
+title: Home
+---
+{% block content %}
+<!-- Sponsors
+================================================== -->
+<div id="section-speakers">
+    <div class="container">
+
+        <div class="eight columns">
+            <h2>Sponsors</h2>
+
+        </div><!-- // .eight -->
+        <div class="clear"></div>
+
+            {% for sponsor in site.sponsors %}
+            <div class="eight columns">
+                <div class="item">
+                    {% if sponsor.url %}
+                    <a href="{{ sponsor.url }}">
+                    {% endif %}
+                        {% if sponsor.logo %}
+                        <img src="{{ site.url }}/images/sponsors/{{ sponsor.logo }}" alt="" height="220" width="440">
+                        {% endif %}
+                        <h3>{{ sponsor.name }}</h3>
+                    {% if sponsor.url %}
+                    </a>
+                    {% endif %}
+                </div><!-- // .item -->
+            </div><!-- // .eight -->
+
+            {% if loop.index0 == 1 %}
+            <div class="clear"></div>
+            {% endif %}
+            {% endfor %}
+
+    </div><!-- // .container -->
+</div><!-- // #section-speakers -->
+{% endblock %}

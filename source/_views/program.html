@@ -1,0 +1,53 @@
+
+<!-- Schedule
+================================================== -->
+<div id="section-programs">
+    <div class="container">
+        <div class="sixteen columns">
+            <h2>Course of the evening</h2>
+
+            <table>
+                <thead>
+                <tr class="even">
+                    <td class="column-first">Hour</td>
+                    <td class="column-second">Program</td>
+                </tr>
+                </thead>
+                <tbody>
+                {% for timing in page.timings %}
+                <tr class="{{ cycle(['odd', 'even'], loop.index0) }}">
+                    <td class="column-first">{{ timing.hour }}</td>
+                    <td class="column-second">
+                        {% if timing.link %}
+                            <a href="{{ timing.link }}">
+                        {% endif %}
+                            {{ timing.content }}
+                        {% if timing.link %}
+                            </a>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor%}
+                </tbody>
+                {% if page.sponsor %}
+                <tfoot>
+                <tr class="odd">
+                    <td class="column-first" colspan="2">
+                        <span id="line-sponsor">
+                            Sponsored by
+                            <span class="font-blue">
+                                <a href="{{ page.sponsor.url }}" title="{{ page.sponsor.name }}">
+                                    {{ page.sponsor.name }}
+                                </a>
+                            </span>
+                        </span>
+                    </td>
+                </tr>
+                </tfoot>
+                {% endif %}
+            </table>
+        </div><!-- // .sixteen -->
+
+        <div class="clear"></div>
+    </div><!-- // .container -->
+</div><!-- // #section-programs -->

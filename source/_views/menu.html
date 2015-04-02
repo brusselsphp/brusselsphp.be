@@ -1,0 +1,56 @@
+<!-- Topbar: fixed + datascroll
+
+        * the attribute data-scrollspy is for automatically updating nav targets based on scroll position
+        * scroll the area below the navbar and watch the active class change
+        ================================================== -->
+<div id="section-topbar">
+    <div id="topbar-inner">
+        <div class="container">
+            <div class="sixteen columns">
+                <div class="dropdown">
+                    <ul id="nav" class="nav" style="float: left;">
+                        <li class="home">
+                            <a href="{{ site.url }}/">
+                                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                                Home
+                            </a>
+                        </li>
+                        <li class="sponsors">
+                            <a href="{{ site.url }}/sponsors">
+                                <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                                Sponsors
+                            </a>
+                        </li>
+                    </ul>
+                </div><!-- // .dropdown -->
+                <div class="dropdown">
+                    <ul id="nav" class="nav">
+                        <li class="menu-item"><a href="#section-header">Top</a></li>
+                        {% if homepage %}
+                        <li class="menu-item"><a href="#section-invite">Invite</a></li>
+                        {% endif %}
+                        <li class="menu-item"><a href="#section-speakers">Speakers</a></li>
+                        {% if page.photos %}
+                        <li class="menu-item"><a href="#section-photos">Photos</a></li>
+                        {% endif %}
+                        <li class="menu-item"><a href="#section-programs">Program</a></li>
+                        <li class="menu-item"><a href="#section-register">Registration</a></li>
+                    </ul>
+                    <select class="selectnav" id="selectnav1">
+                        <option value="">- Navigation -</option>
+                        <option value="{{ site.url }}/#section-header">Home</option>
+                        <option value="{{ site.url }}/#section-invite">Invite</option>
+                        <option value="{{ site.url }}/#section-speakers">Speakers</option>
+                        <option value="{{ site.url }}/#section-photos">Photos</option>
+                        <option value="{{ site.url }}/#section-programs">Program</option>
+                        <option value="{{ site.url }}/#section-register">Registration</option>
+                    </select><!-- // uL#nav -->
+                </div><!-- // .dropdown -->
+
+                <div class="clear"></div>
+            </div><!-- // .sixteen -->
+        </div><!-- // .container -->
+
+        <div class="clear"></div>
+    </div><!-- // #topbar-inner -->
+</div><!-- // #section-topbar -->

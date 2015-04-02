@@ -1,0 +1,30 @@
+{% if homepage or site.lastpost | date('U') == page.date %}
+<!-- Invitation
+================================================== -->
+<div id="section-invite">
+    <div class="container">
+        <div class="sixteen columns">
+            <h2>Invite</h2>
+        </div><!-- // .sixteen -->
+
+        <div class="clear"></div>
+
+        <div class="sixteen columns">
+            <p class="headline">Web developper, backend, frontend, DBA specialist come and exchange on your passion.</p>
+        </div><!-- // .eight -->
+
+        <div class="clear"></div>
+
+        <div class="sixteen columns">
+            <p> The IT world is in constant (r)evolution.<br>
+                Come and share your experience or benefit from the community.<br>
+                All in a relaxed and friendly atmosphere.<br>
+                <br>
+                Please <a href="{{ site.meetup_url }}">RSVP</a> to ensure that there is enough food for everyone.<br>
+                Or just <a href="{{ site.meetup_url }}">register</a> to be kept informed about future meetups.</p>
+        </div><!-- // .eight -->
+
+        <div class="clear"></div>
+    </div><!-- // .container -->
+</div><!-- // #section-invite -->
+{% endif %}
