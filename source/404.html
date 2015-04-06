@@ -3,5 +3,28 @@ layout: default
 permalink: none
 title: Four o four
 ---
+{% block content_wrapper %}
 
-<h2>Page not found</h2>
+{% set no_next_event_banner = true %}
+{% include 'header.html' %}
+
+<!-- 404
+================================================== -->
+<div id="section-content" style="padding: 80px 0;">
+    <div class="container">
+        <div class="sixteen columns">
+            <h2>Page not found</h2>
+        </div><!-- // .sixteen -->
+
+        <div class="clear"></div>
+
+        <div class="sixteen columns">
+            <p class="headline">Sorry, seems like we can't find the page you are looking for.</p>
+            <h1><a href="{{ site.url }}">Here is a link to our Homepage.</a></h1>
+        </div><!-- // .eight -->
+
+        <div class="clear"></div>
+
+    </div><!-- // .container -->
+</div><!-- // #404 -->
+{% endblock content_wrapper %}
