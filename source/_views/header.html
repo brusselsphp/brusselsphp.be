@@ -11,5 +11,7 @@
         <div class="clear"></div>
     </div><!-- // .container -->
 
+    {% if no_next_event_banner is not defined %}
     {% include 'next-event.html' %}
+    {% endif %}
 </div><!-- // #section-header -->
