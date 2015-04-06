@@ -1,0 +1,43 @@
+---
+layout: default
+title: Past Meetups
+generator: pagination
+pagination:
+    max_per_page: 100
+use:
+    - posts
+---
+{% block content_wrapper %}
+    {% set meetup_year = '' %}
+    {% set no_next_event_banner = true %}
+
+{% include 'header.html' %}
+
+<!-- Pasts meetups
+================================================== -->
+<div id="section-content">
+    <div class="container">
+        <div class="sixteen columns">
+            <h2>Pasts Meetups</h2>
+        </div><!-- // .sixteen -->
+
+        <div class="clear"></div>
+
+        <div class="sixteen columns">
+        {% for meetup in page.pagination.items %}
+            {% set current_meetup_year = meetup.meta.date | date('Y') %}
+            {% if meetup_year != current_meetup_year %}
+                {% set meetup_year = meetup.meta.date | date('Y') %}
+                <h2>{{ meetup_year }}</h2>
+            {% endif %}
+            <ul>
+                <li><a href="{{ meetup.url }}">{{ meetup.title }}</a></li>
+            </ul>
+        {% endfor %}
+        </div><!-- // .eight -->
+
+        <div class="clear"></div>
+
+    </div><!-- // .container -->
+</div><!-- // #section-content -->
+{% endblock %}
