@@ -18,14 +18,26 @@ color:
 lastpost: 2015-03-18
 
 sponsors:
-    -
-      name: Cube Solutions
-      url: https://cu.be
-      logo: cube/cube.png
-    -
-      name: Beta Cowork
-      url:
-      logo: betacowork/betacowork-banner-logo.svg
+    line1:
+        -
+          name: Cube Solutions
+          url: https://cu.be
+          logo: cube/cube.png
+        -
+          name: Beta Cowork
+          url:
+          logo: betacowork/betacowork-banner-logo.svg
+    line2:
+        -
+          name: Your logo Here
+          url: "/sponsorship"
+          logo:
+          class: sponsorship-img
+        -
+          name: Your logo Here
+          url: "/sponsorship"
+          logo:
+          class: sponsorship-img
 
 # Insert your disqus shortname
 #disqus:

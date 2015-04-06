@@ -5,7 +5,7 @@ title: Sponsors
 {% block content %}
 <!-- Sponsors
 ================================================== -->
-<div id="section-speakers">
+<div id="section-content">
     <div class="container">
 
         <div class="eight columns">
@@ -14,16 +14,18 @@ title: Sponsors
         </div><!-- // .eight -->
         <div class="clear"></div>
 
-            {% for sponsor in site.sponsors %}
-            <div class="eight columns">
+        {% for line in site.sponsors %}
+            {% for sponsor in line %}
+            <div class="height columns {{ sponsor.class }}">
                 <div class="item">
                     {% if sponsor.url %}
                     <a href="{{ sponsor.url }}">
                     {% endif %}
                         {% if sponsor.logo %}
                         <img src="{{ site.url }}/images/sponsors/{{ sponsor.logo }}" alt="" height="220" width="440">
-                        {% endif %}
+                        {% else %}
                         <h3>{{ sponsor.name }}</h3>
+                        {% endif %}
                     {% if sponsor.url %}
                     </a>
                     {% endif %}
@@ -34,6 +36,7 @@ title: Sponsors
             <div class="clear"></div>
             {% endif %}
             {% endfor %}
+        {% endfor %}
 
     </div><!-- // .container -->
 </div><!-- // #section-speakers -->

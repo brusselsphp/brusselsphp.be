@@ -884,6 +884,16 @@ img { max-width: 100%; }
 		}
 
 
+#section-content {
+    padding: 60px 0;
+}
+
+.sponsorship-img {
+    padding: 10% 0% 10% 16%;
+    border: groove;
+    width: 45%;
+}
+
 
 
 /*--------------------------------------------------------------------------
