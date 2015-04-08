@@ -86,9 +86,9 @@ p.desc {
 	border-bottom: 1px solid {{ site.color.main }};
 }
 
-img { max-width: 100%; }
-.container .seven.columns.newlogo  {width:328px;}
-.container .seven.columns.newlogo img  { max-width : 160%}
+img { max-width: 100%; height: 100%;}
+.container .seven.columns.newlogo  {width:100%;}
+.container .seven.columns.newlogo img  { max-width : 836px; width: 100%}
 
 
 	/*---------------------------------------------------
@@ -947,4 +947,22 @@ img { max-width: 100%; }
 
 .next-meetup, .previous-meetup {
     font-size: 28px;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    #section-topbar ul#nav a{
+        padding: 10px 10px 15px 10px;
+    }
+}
+@media only screen and (max-width: 767px){
+    #section-header {
+        padding-top: 0px;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+    #section-header {
+        padding-top: 20px;
+    }
+}
+img.sponsors {
+    margin: 10px;
 }
