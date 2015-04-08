@@ -35,6 +35,7 @@
                         </li>
                     </ul>
                 </div><!-- // .dropdown -->
+                {% if no_event_menu is not defined %}
                 <div class="dropdown">
                     <ul id="nav" class="nav">
                         <li class="menu-item"><a href="#section-header">Top</a></li>
@@ -58,6 +59,7 @@
                         <option value="{{ site.url }}/#section-register">Registration</option>
                     </select><!-- // uL#nav -->
                 </div><!-- // .dropdown -->
+                {% endif %}
 
                 <div class="clear"></div>
             </div><!-- // .sixteen -->
