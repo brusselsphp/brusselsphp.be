@@ -1,8 +1,6 @@
 ---
 permalink: none
-template: 'css.twig'
 ---
-{% block content %}
 /*--------------------------------------------------------------------------
    
 	Eventcamp
@@ -950,4 +948,3 @@ img { max-width: 100%; }
 .next-meetup, .previous-meetup {
     font-size: 28px;
 }
-{% endblock content %}
