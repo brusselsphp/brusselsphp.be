@@ -23,11 +23,16 @@ sponsors:
           name: Cube Solutions
           url: https://cu.be
           logo: cube/cube.png
+    line2:
+        -
+          name: Jetbrains
+          url: https://www.jetbrains.com/phpstorm/
+          logo: jetbrains/logo_phpstorm.png
         -
           name: Beta Cowork
           url: http://www.betacowork.com/
           logo: betacowork/betacowork-banner-logo.svg
-    line2:
+    line3:
         -
           name: Your logo Here
           url: "/sponsorship"
