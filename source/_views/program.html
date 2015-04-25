@@ -21,9 +21,12 @@
                         {% if timing.link %}
                             <a href="{{ timing.link }}">
                         {% endif %}
-                            {{ timing.content }}
+                            <h3>{{ timing.content }} :</h3>
                         {% if timing.link %}
                             </a>
+                        {% endif %}
+                        {% if timing.abstract %}
+                            <p>{{ timing.abstract }}</p>
                         {% endif %}
                     </td>
                 </tr>
