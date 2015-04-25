@@ -52,9 +52,13 @@
                     <select class="selectnav" id="selectnav1">
                         <option value="">- Navigation -</option>
                         <option value="{{ site.url }}/#section-header">Top</option>
+                        {% if homepage %}
                         <option value="{{ site.url }}/#section-invite">Invite</option>
+                        {% endif %}
                         <option value="{{ site.url }}/#section-speakers">Speakers</option>
+                        {% if page.photos %}
                         <option value="{{ site.url }}/#section-photos">Photos</option>
+                        {% endif %}
                         <option value="{{ site.url }}/#section-programs">Program</option>
                         <option value="{{ site.url }}/#section-register">Registration</option>
                     </select><!-- // uL#nav -->
