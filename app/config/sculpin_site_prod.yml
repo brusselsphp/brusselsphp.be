@@ -1,3 +1,4 @@
 imports:
 - sculpin_site.yml
 url: "http://brusselsphp.be"
+google_analytics_tracking_id: 'UA-61691041-1'
