@@ -22,7 +22,7 @@ title: Sponsors
 
         {% for line in site.sponsors %}
             {% for sponsor in line %}
-            <div class="height columns {{ sponsor.class }}">
+            <div class="eight columns {{ sponsor.class }}">
                 <div class="item">
                     {% if sponsor.url %}
                     <a href="{{ sponsor.url }}">
@@ -38,7 +38,7 @@ title: Sponsors
                 </div><!-- // .item -->
             </div><!-- // .eight -->
 
-            {% if loop.index0 == 1 %}
+            {% if loop.index == line | length %}
             <div class="clear"></div>
             {% endif %}
             {% endfor %}
