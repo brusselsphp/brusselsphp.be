@@ -8,6 +8,7 @@ location:
     name: Betacowork Coworking Brussels
 speaker: 
     name: Patrick Allaert
+    twitter: patrick_allaert
     title:
     photo:
     bio:
@@ -27,6 +28,7 @@ timings:
             and other structures from PHP extensions as well.The impact that PHP 7 should have on data structures 
             will be introduced as well.
         link: http://www.meetup.com/Brussels-PHP-Meetup/events/222073409/
+        joindin: 14476
     - 
         hour: 21:30
         content: Closing and migration to the closest bar for the most motivated

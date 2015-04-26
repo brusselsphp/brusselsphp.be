@@ -8,6 +8,7 @@ location:
     name: Betacowork Coworking Brussels
 speaker: 
     name: Coderabbi
+    twitter: coderabbi
     photo:
     title:
     bio:
@@ -20,6 +21,13 @@ timings:
         hour: 20:00
         content: Talmudic Maxims to Maximize Your Growth as a Software Developer (Yitzchok Willroth)
         link: http://www.meetup.com/Brussels-PHP-Meetup/events/219328777/
+        abstract: >
+            You’ve been programming for a while now. You’re beginning to feel that you’ve got a handle on things but 
+            at the same time can’t escape the feeling that you’ve somehow plateaued in your growth as a software 
+            developer. In this talk Yitzchok, a rabbinic scholar and software developer, shares the 
+            “wisdom of the sages” as practical, actionable advice – strategies and tactics – that you can use 
+            to reinvigorate your growth as a software developer.
+        joindin: 13403
     - 
         hour: 21:30
         content: Closing and migration to the closest bar for the most motivated

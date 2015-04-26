@@ -28,6 +28,9 @@
                         {% if timing.abstract %}
                             <p>{{ timing.abstract }}</p>
                         {% endif %}
+                        {% if timing.joindin %}
+                            <a href="https://joind.in/talk/view/{{timing.joindin}}">Rate the talk</a>
+                        {% endif %}
                     </td>
                 </tr>
                 {% endfor%}

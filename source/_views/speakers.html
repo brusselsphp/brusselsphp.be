@@ -13,7 +13,17 @@
                 {% if page.speaker.photo %}
                 <img src="{{ page.speaker.photo }}" alt="" height="220" width="440">
                 {% endif %}
-                <h3>{{ page.speaker.name }}<br>
+                <h3>
+                    {% if page.speaker.twitter %}
+                        <a href="https://twitter.com/{{ page.speaker.twitter }}">
+                    {% endif %}
+
+                    {{ page.speaker.name }}
+
+                    {% if page.speaker.twitter %}
+                        </a>
+                    {% endif %}
+                    <br>
                     {% if page.speaker.title %}
                     <span class="speaker-title">{{ page.speaker.title }}</span>
                     {% endif %}

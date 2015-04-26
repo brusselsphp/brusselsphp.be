@@ -8,6 +8,7 @@ location:
     name: Betacowork Coworking Brussels
 speaker: 
     name: Juliette Reinders Folmer
+    twitter: jrf_nl
     title:
     photo:
     bio:
@@ -20,6 +21,11 @@ timings:
         hour: 20:00
         content: The Big 'Why equal doesn't equal' Quiz
         link: http://www.meetup.com/Brussels-PHP-Meetup/events/220702996/
+        abstract: >
+            We all compare data on nearly every other line in our code, be it input validation, an if-statement, 
+            a switch or determining what to display and how.
+            So of course we are all experts on how to do these comparisons…. Or are we?
+        joindin: 14261
     - 
         hour: 21:30
         content: Closing and migration to the closest bar for the most motivated
