@@ -9,9 +9,11 @@ location:
 speaker: 
     name: Coderabbi
     twitter: coderabbi
-    photo:
+    photo: coderabbi.png
     title:
-    bio:
+    bio: >
+        Coder & Rabbi (though seldom at the same time); 
+        Startup Vet, Dev BootCamp Guide, Mentor, Consultant, Conference Speaker, Organizer of ShorePHP & #hackthestigma.
 photos: 
 timings:
     - 

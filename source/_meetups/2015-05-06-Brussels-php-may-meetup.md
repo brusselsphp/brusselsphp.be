@@ -10,7 +10,7 @@ speaker:
     name: Patrick Allaert
     twitter: patrick_allaert
     title:
-    photo:
+    photo: patrick_allaert.jpg
     bio:
 photos: 
 timings:

@@ -11,7 +11,7 @@
         <div class="eight columns">
             <div class="item">
                 {% if page.speaker.photo %}
-                <img src="{{ page.speaker.photo }}" alt="" height="220" width="440">
+                <img src="{{ site.url }}/images/speakers/{{ page.speaker.photo }}" alt="{{ page.speaker.name }}" class="speaker-photo">
                 {% endif %}
                 <h3>
                     {% if page.speaker.twitter %}
