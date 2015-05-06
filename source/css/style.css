@@ -974,3 +974,6 @@ img.sponsors {
     height: 200px;
     border-radius: 5px;
 }
+.code-of-conduct p {
+    padding-bottom: 1em;
+}
