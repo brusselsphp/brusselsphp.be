@@ -1,47 +1,31 @@
-Sculpin Blog Skeleton
-=====================
+Sculpin [BrusselsPHP website](http://brusselsphp.be)
+====================================================
 
-A skeleton for a Sculpin based blog.
+All improvement of the website are welcomed.
+Just make a PR with your modification.
 
-Powered by [Sculpin](http://sculpin.io). =)
+Install
+-------
 
+You need sculpin to build the brusselsphp website
+ 
+### You can download Sculpin like so
+ 
+    curl -O https://download.sculpin.io/sculpin.phar
 
-Features
---------
-
-A very basic Sculpin based blog supporting the following features:
-
- * Very minimal Bootstrap based theme.
- * A handful of existing posts in `source/_posts/` to get you started. Feel
-   free to remove these when you are ready.
- * An about page at `/about`.
- * An index page at `/`. It displays all posts and paginates them.
- * A blog archive page at `/blog`. It displays post titles broken down by
-   month and is paginated.
- * A blog categories page at `/blog/categories`.
- * A blog category index at `/blog/categories/$category`. Similar to the blog
-   archive except broken down by each category.
- * A blog tags page at `/blog/tags`.
- * A blog tag index at `/blog/tags/$tag`. Similar to the blog archive
-   except broken down by each tag.
-
+### Then you clone the brusselsphp repository
+ 
+    git clone https://github.com/brusselsphp/brusselsphp.be
 
 Build
 -----
 
 ### If You Already Have Sculpin
 
-    sculpin install
     sculpin generate --watch --server
 
-Your newly generated clone of sculpin-blog-skeleton is now
+Your newly generated clone of brusselsphp is now
 accessible at `http://localhost:8000/`.
-
-### If You Need Sculpin
-
-    curl -O https://download.sculpin.io/sculpin.phar
-    php sculpin.phar install
-    php sculpin.phar generate --watch --server
 
 
 Previewing Development Builds
@@ -50,10 +34,9 @@ Previewing Development Builds
 By default the site will be generated in `output_dev/`. This is the location
 of your development build.
 
+### Using Sculpin's Internal Webserver
 To preview it with Sculpin's built in webserver, run either of the following
 commands. This will start a simple webserver listening at `localhost:8000`.
-
-### Using Sculpin's Internal Webserver
 
 #### Generate Command
 
