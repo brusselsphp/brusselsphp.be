@@ -4,35 +4,42 @@
     <div class="container">
 
         <div class="eight columns">
-            <h2>Speaker</h2>
+            <h2>Speaker{{ page.speakers | length > 1 ? 's':''}}</h2>
 
         </div><!-- // .eight -->
+        <div class="clear"></div>
 
-        <div class="eight columns">
+        {% for speaker in page.speakers %}
+        <div class="four columns">
             <div class="item">
-                {% if page.speaker.photo %}
-                <img src="{{ site.url }}/images/speakers/{{ page.speaker.photo }}" alt="{{ page.speaker.name }}" class="speaker-photo">
+                {% if speaker.photo %}
+                <img src="{{ site.url }}/images/speakers/{{ speaker.photo }}" alt="{{ speaker.name }}" class="speaker-photo">
                 {% endif %}
+            </div>
+        </div>
+        <div class="twelve columns">
+            <div class="item">
                 <h3>
-                    {% if page.speaker.twitter %}
-                        <a href="https://twitter.com/{{ page.speaker.twitter }}">
+                    {% if speaker.twitter %}
+                        <a href="https://twitter.com/{{ speaker.twitter }}">
                     {% endif %}
 
-                    {{ page.speaker.name }}
+                    {{ speaker.name }}
 
-                    {% if page.speaker.twitter %}
+                    {% if speaker.twitter %}
                         </a>
                     {% endif %}
                     <br>
-                    {% if page.speaker.title %}
-                    <span class="speaker-title">{{ page.speaker.title }}</span>
+                    {% if speaker.title %}
+                    <span class="speaker-title">{{ speaker.title }}</span>
                     {% endif %}
                 </h3>
-                <p>{{ page.speaker.bio }}</p>
+                <p>{{ speaker.bio }}</p>
             </div><!-- // .item -->
         </div><!-- // .eight -->
 
         <div class="clear"></div>
+        {% endfor %}
 
     </div><!-- // .container -->
 </div><!-- // #section-speakers -->
