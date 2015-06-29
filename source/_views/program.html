@@ -36,14 +36,16 @@
                 {% endfor%}
                 </tbody>
                 {% if page.sponsor %}
+                {% set sponsorname = (page.sponsor.name | trim | length) == 0 ? 'To be annouced' : 'by ' ~ page.sponsor.name %}
+                {% set sponsorurl = (page.sponsor.url | trim | length) == 0 ? 'http://brusselsphp.be/sponsorship/' : page.sponsor.url %}
                 <tfoot>
                 <tr class="odd">
                     <td class="column-first" colspan="2">
                         <span id="line-sponsor">
-                            Sponsored by
+                            Sponsored
                             <span class="font-blue">
-                                <a href="{{ page.sponsor.url }}" title="{{ page.sponsor.name }}">
-                                    {{ page.sponsor.name }}
+                                <a href="{{ sponsorurl }}" title="{{ sponsorname }}">
+                                    {{ sponsorname }}
                                 </a>
                             </span>
                         </span>
