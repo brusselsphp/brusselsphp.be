@@ -180,7 +180,7 @@ img { max-width: 100%; height: 100%;}
 	
 	#section-header {
 		color: #fff;
-		background: #111 url('{{ site.url }}/images/brusselsphp/bxl_php_bg.jpg') no-repeat center 58px;
+		background: #111 url('{{ site.url }}/images/brusselsphp/bxl_php_bg.jpg') no-repeat center 20px;
 	}
 
 		/* Site Title/Logo */
@@ -188,7 +188,7 @@ img { max-width: 100%; height: 100%;}
 			color: #fff;
 			font: bold 45px/65px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 			text-transform: uppercase;
-			margin-bottom: 5px;
+			margin-bottom: -10px;
 		}
 
 		#section-header h1 a {
