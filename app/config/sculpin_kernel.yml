@@ -12,6 +12,6 @@ sculpin_twig:
     view_paths:
         ['_views', '_meetups', 'css' ]
     extensions:
-        ['', 'twig', 'html', 'html.twig', 'twig.html', 'css']
+        ['', 'twig', 'html', 'html.twig', 'twig.html', 'css', '.htaccess']
 sculpin:
     ignore: ["**/*~"]
