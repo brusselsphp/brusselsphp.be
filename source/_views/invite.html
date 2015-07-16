@@ -1,4 +1,4 @@
-{% if homepage or site.lastpost | date('U') == page.date %}
+{% if homepage or page.next_post.url is null %}
 <!-- Invitation
 ================================================== -->
 <div id="section-invite">
