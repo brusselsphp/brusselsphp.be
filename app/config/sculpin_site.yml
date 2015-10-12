@@ -21,6 +21,10 @@ sponsors:
           name: Cube Solutions
           url: https://cu.be
           logo: cube/cube.png
+        -
+          name: Pluralsight
+          url: https://pluralsight.com
+          logo: pluralsight/logo2.png
     line2:
         -
           name: Jetbrains
