@@ -26,7 +26,7 @@
                             </a>
                         {% endif %}
                         {% if timing.abstract %}
-                            <p>{{ timing.abstract }}</p>
+                            <p>{{ timing.abstract | nl2br}}</p>
                         {% endif %}
                         {% if timing.link %}
                         <a href="{{ timing.link }}">
