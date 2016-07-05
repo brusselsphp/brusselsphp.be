@@ -34,7 +34,11 @@
                         </a>
                         {% endif %}
                         {% if timing.joindin %}
-                            <a href="https://joind.in/talk/view/{{timing.joindin}}">Rate the talk</a>
+                            {% if timing.joindin matches '/^http*/' %}
+                                <a href="{{timing.joindin}}">Rate the talk</a>
+                            {% else %}
+                                <a href="https://joind.in/talk/view/{{timing.joindin}}">Rate the talk</a>
+                            {% endif %}
                         {% endif %}
                     </td>
                 </tr>

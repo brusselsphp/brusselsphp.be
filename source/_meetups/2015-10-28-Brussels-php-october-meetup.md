@@ -12,7 +12,10 @@ speakers:
         twitter: gabriel_somoza
         title:
         photo: 
-        bio: >
+        bio: |
+            Gabriel Somoza is a Belgium-based PHP Architect and entrepreneur. He currently spends most of his time as Director of Operations at [Strategery](https://usestrategery.io) – a boutique company that specializes in building highly-customized web applications e-commerce stores. He's also a *ZCE* and *Magento Certified Developer (Plus)*.
+            Gabriel is active in the open-source community with contributions to Doctrine Migrations, ZF2 and is the original author of the Strategery InfiniteScroll extension for Magento (the most popular extension of its class) - among several other small contributions to other projects. He's also the organizer of HasseltPHP, a meetup with 120 registered members in Belgium.
+            When not working he spends time with his beautiful wife, travels, and does research on new ways of applying technology.
             
 photos: 
 timings:
