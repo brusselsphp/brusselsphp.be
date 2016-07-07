@@ -11,7 +11,7 @@ speakers:
         name: Jonathan aka Grummfy
         twitter: grummfy
         title:
-        photo: grummfy.jpg
+        photo: grummfy.png
         bio: |
              PHP Developer since 2002, Jonathan is a passionate that began in the field of PHP by contributing to various open source projects.
              His experiences evolved through various positions from development, server management or project management.
