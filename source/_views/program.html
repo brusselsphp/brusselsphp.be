@@ -45,7 +45,7 @@
                 {% endfor%}
                 </tbody>
                 {% if page.sponsor %}
-                {% set sponsorname = (page.sponsor.name | trim | length) == 0 ? 'To be annouced' : 'by ' ~ page.sponsor.name %}
+                {% set sponsorname = (page.sponsor.name | trim | length) == 0 ? 'By you ?' : 'by ' ~ page.sponsor.name %}
                 {% set sponsorurl = (page.sponsor.url | trim | length) == 0 ? 'http://brusselsphp.be/sponsorship/' : page.sponsor.url %}
                 <tfoot>
                 <tr class="odd">
